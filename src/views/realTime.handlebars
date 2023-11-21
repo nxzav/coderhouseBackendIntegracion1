@@ -1,0 +1,21 @@
+<h1>Real Time</h1>
+
+<form id="form" class="form" action="/api/products" method="post">
+  <label for="title">Title: </label><input name="title" type="text" />
+  <label for="description">Description: </label><input name="description" type="text" />
+  <label for="code">Code: </label><input name="code" type="text" />
+  <label for="price">Price: </label><input name="price" type="number" />
+  <label for="status">Status: </label><select name="status" id="">
+    <option value="1">Availabe</option>
+    <option value="0">Not available</option>
+  </select>
+  <label for="stock">Stock: </label><input name="stock" type="number" />
+  <label for="category">Category: </label><input name="category" type="text" />
+  <label for="thumbnails">Thumbnails: </label><input name="thumbnails" type="text" />
+  <label for=""></label><button type="submit">Enviar</button>
+</form>
+
+<div id="box" class="container grid"></div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="/js/realTime.js"></script>
